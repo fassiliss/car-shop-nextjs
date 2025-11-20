@@ -13,9 +13,9 @@ export default function Header() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-center text-sm">
                         <div className="hidden md:flex gap-6">
-                            <a href="tel:+16155550199" className="hover:text-blue-400">📞 (615) 555-0199</a>
+                            <a href="tel:+16154967208" className="hover:text-blue-400">📞 (615) 555-0199</a>
                             <a href="mailto:info@autoshop.com" className="hover:text-blue-400">✉️ info@autoshop.com</a>
-                            <span>📍 Franklin, TN</span>
+                            <span>📍 Smyrna, TN</span>
                         </div>
                         <div className="flex gap-4">
                             <a href="#" className="hover:text-blue-400">Facebook</a>

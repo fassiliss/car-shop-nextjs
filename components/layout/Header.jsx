@@ -29,7 +29,7 @@ export default function Header() {
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     <Link href="/" className="text-3xl font-bold text-blue-600">
-                        AutoShop
+                        Planet AutoShop
                     </Link>
 
                     {/* Desktop Menu */}

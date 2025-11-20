@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-8">
                     {/* About */}
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 text-blue-400">AutoShop</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-blue-400">Planet AutoShop</h3>
                         <p className="text-gray-400 mb-4">
                             Your trusted source for quality used cars in Franklin, TN. We offer transparent pricing and excellent service.
                         </p>

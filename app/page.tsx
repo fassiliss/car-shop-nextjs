@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import CarCard from '@/components/cars/CarCard';
 import { getFeaturedCars } from '@/lib/cars';
+import Image from 'next/image';
 
 export default function Home() {
     const featuredCars = getFeaturedCars();
@@ -8,19 +9,34 @@ export default function Home() {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative h-[70vh] flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-800">
-                <div className="text-center text-white px-4 max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            {/* Hero Section */}
+            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+                {/* Background Image */}
+                <Image
+                    src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1920&h=1080&fit=crop"
+                    alt="Luxury car"
+                    fill
+                    className="object-cover"
+                    priority
+                    quality={90}
+                />
+
+                {/* Dark Overlay for text readability */}
+                <div className="absolute inset-0 bg-black/50"></div>
+
+                {/* Content */}
+                <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
                         Find Your Perfect Car
                     </h1>
-                    <p className="text-xl md:text-2xl mb-8">
+                    <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
                         Quality used vehicles with transparent pricing and excellent service
                     </p>
                     <div className="flex gap-4 justify-center flex-wrap">
-                        <Link href="/cars" className="bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition">
+                        <Link href="/cars" className="bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">
                             Browse Inventory
                         </Link>
-                        <Link href="/contact" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-blue-600 transition">
+                        <Link href="/contact" className="bg-white/20 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/30 transition shadow-lg">
                             Contact Us
                         </Link>
                     </div>
